@@ -1,0 +1,93 @@
+
+#main_content
+  border-bottom: 1px solid $border
+
+#page_title
+  font-weight: 500
+  font-size: 1rem
+  text-transform: uppercase
+  text-align: center
+  padding: 2em 0
+
+#posts_wrapper
+  padding: 3em 0
+  .post
+    text-align: center
+    .date
+      font-size: 0.9rem
+      margin: 0
+    h3
+      margin: 0
+      font-size: 2rem
+      text-transform: uppercase
+      a
+        text-decoration: none
+        color: $dark
+        &:hover
+          color: $highlight
+
+    hr
+      margin: 3em auto
+
+///--------------Post Show
+#post_show_content
+  header
+    text-align: center
+    .date
+      font-size: .9em
+      color: $light
+      margin: 0
+    h2
+      margin: 0
+  hr
+    margin: 3em auto
+
+#share_box
+  text-align: center
+  p
+    padding: 0 0 1em 0
+    margin: 0
+    font-weight: 700
+    text-transform: uppercase
+    color: $dark
+    font-size: .8em
+  i
+    color: $dark
+    padding: 1em 1.5em
+
+    &:hover
+      color: $highlight
+      cursor: pointer
+
+///////---------- Pagination
+.pagination
+  text-align: center
+  margin: 0 0 3em 0
+  a, .previous_page, .current, .next_page
+    padding: .75em 1em
+    margin: 0 .5em
+    border-radius: 0.15em
+    line-height: 20px
+    background: $white
+    font-weight: 500
+    font-size: .89em
+    font-style: normal
+    color: $dark
+    text-decoration: none
+    &:hover
+      background: $highlight
+      color: $white
+  .current
+    background: $highlight
+    color: $white
+  .disabled
+    color: #c0c0c0
+    &:hover
+      color: #c0c0c0
+      background: $white
+  &:before, &:after
+    content: " "
+    display: table
+    clear: both
+  &:after
+    clear:box

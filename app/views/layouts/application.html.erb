@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DrishBlog</title>
-    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>DCSS Blog</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+
+    <!--this is the header-->
+    <header id="main_navigation" class="clearfix">
+      <div class="wrapper clearfix"><a href="index.html" class="name">DCSS</a>
+        <nav>
+          <%= link_to 'Articles', posts_path %>
+          <a href="#">Projects</a>
+          <a href="contact.html">Contact</a></nav>
+      </div>
+    </header>
+
+    <!--this is the main content-->
     <%= yield %>
+
+    <!--this is the footer-->
+    <footer id="main_footer">
+      <div class="wrapper clearfix">
+        <p class="copyright">&copy; 2015 DCSS</p>
+        <nav><a href="#"><i class="fa fa-twitter">         </i></a><a href="#"><i class="fa fa-github"></i></a><a href="#"><i class="fa fa-dribbble"></i></a></nav>
+      </div>
+    </footer>
+
   </body>
 </html>
