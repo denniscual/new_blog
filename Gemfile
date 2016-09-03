@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'clipboard-rails', '~> 1.3', '>= 1.3.1.1'
+gem 'friendly_id', '~> 5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
