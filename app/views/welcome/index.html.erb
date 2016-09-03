@@ -1,0 +1,24 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 homepage_content about">
+    <h3>About</h3>
+    <hr>
+    <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo. <a href='#'> Unicasts </a>       </p>
+    <p>lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.a feugiat. </p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h3>Stuff I've Written</h3>
+    <hr>
+    <% @posts.each do |post| %>
+        <h4><%=	link_to post.title, post %></h4>
+        <p class="date"><%=	 post.created_at.strftime('%A, %b, %d') %></p>
+    <%	end  %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h3>Stuff I've Built</h3>
+    <hr>
+    <h4>The DCSS Community</h4>
+    <p class="date">Friday April 10th</p>
+    <h4>Challenge</h4>
+    <p class="date">Friday April 10th</p>
+  </div>
+</div>

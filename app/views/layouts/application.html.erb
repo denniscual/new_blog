@@ -17,7 +17,8 @@
 
     <!--this is the header-->
     <header id="main_navigation" class="clearfix">
-      <div class="wrapper clearfix"><a href="index.html" class="name">DCSS</a>
+      <div class="wrapper clearfix">
+        <%= link_to 'DCSS', root_path , :class => 'name' %>
         <nav>
           <%= link_to 'Articles', posts_path %>
           <a href="#">Projects</a>
@@ -26,13 +27,19 @@
     </header>
 
     <!--this is the main content-->
-    <%= yield %>
+    <main id="main_content">
+      <%= yield %>
+    </main>
+
 
     <!--this is the footer-->
     <footer id="main_footer">
       <div class="wrapper clearfix">
         <p class="copyright">&copy; 2015 DCSS</p>
-        <nav><a href="#"><i class="fa fa-twitter">         </i></a><a href="#"><i class="fa fa-github"></i></a><a href="#"><i class="fa fa-dribbble"></i></a></nav>
+        <nav>
+          <a href="#"><i class="fa fa-dribbble" target="_blank"></i></a>
+          <a href="https://github.com/denniscual" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://facebook.com/drishAisha" target="_blank"><i class="fa fa-facebook"></i></a></nav>
       </div>
     </footer>
 
