@@ -7,7 +7,7 @@
     <hr>
     <section id="content">
       <article>
-        <%=	 @post.content %>
+        <%=	markdown @post.content %>
       </article>
       <hr>
       <div id="share_box">
@@ -28,4 +28,7 @@
       <hr>
     </section>
   </article>
+
+  <%=	 link_to 'Edit', edit_post_path(@post) %>
+
 </div>
