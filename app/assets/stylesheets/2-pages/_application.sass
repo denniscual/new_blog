@@ -1,6 +1,9 @@
 // Clearfix hack
 *
   box-sizing: border-box
+
+.notice, .alert
+  display: none
 .wrapper
   width: 90%
   max-width: 980px
@@ -30,6 +33,10 @@
     text-decoration: none
     color: $dark
     float: left
+  nav a:hover
+    color: $light
+    //font-weight: 500
+
   nav
     float: right
     padding-top: 1.5rem
@@ -88,4 +95,15 @@ input[type='submit'], .button
 
   &:hover
     border: 2px solid $highlight
+    color: $highlight
+
+  //for read more links
+.read_more_post
+  color: $light
+  font-weight: 500
+  font-size: .8em
+  text-transform: uppercase
+  text-decoration: none
+
+  &:hover
     color: $highlight

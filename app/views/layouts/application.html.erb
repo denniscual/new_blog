@@ -20,9 +20,13 @@
       <div class="wrapper clearfix">
         <%= link_to 'DCSS', root_path , :class => 'name' %>
         <nav>
-          <%= link_to 'Articles', posts_path %>
-          <a href="#">Projects</a>
-          <a href="contact.html">Contact</a></nav>
+            <%= link_to 'Articles', posts_path %>
+            <a href="#">Projects</a>
+            <a href="contact.html">Contact</a>
+            <%	if user_signed_in? %>
+                <%=	 link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+            <%	end  %>
+        </nav>
       </div>
     </header>
 

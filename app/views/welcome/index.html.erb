@@ -12,6 +12,8 @@
         <h4><%=	link_to post.title, post %></h4>
         <p class="date"><%=	 post.created_at.strftime('%A, %b, %d') %></p>
     <%	end  %>
+
+    <%=	 link_to 'Read More Articles', posts_path , :class => 'read_more_post' %>
   </div>
   <div class="col-3 homepage_content">
     <h3>Stuff I've Built</h3>
