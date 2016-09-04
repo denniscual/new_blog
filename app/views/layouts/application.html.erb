@@ -26,6 +26,13 @@
       </div>
     </header>
 
+    <!--this will only show up if there is notice and alert-->
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+
     <!--this is the main content-->
     <main id="main_content">
       <%= yield %>

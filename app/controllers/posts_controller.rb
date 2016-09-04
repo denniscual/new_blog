@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
 
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  # give authentication to the user except on the index and show view
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     # this will only display 2 posts per page...
