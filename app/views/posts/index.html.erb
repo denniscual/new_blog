@@ -12,11 +12,12 @@
           </article>
       <% end %>
     </section>
-    <div class="pagination">
-      <span class="previous_page disabled">Previous</span>
-      <em class="current">1</em>
-      <a rel="next" href="#">2</a>
-      <a rel="next_page" href="#" class="next_page">Next</a>
-    </div>
+    <!--<div class="pagination">-->
+      <!--<span class="previous_page disabled">Previous</span>-->
+      <!--<em class="current">1</em>-->
+      <!--<a rel="next" href="#">2</a>-->
+      <!--<a rel="next_page" href="#" class="next_page">Next</a>-->
+    <!--</div>-->
+    <%=	 will_paginate @posts %>
   </article>
 </div>
